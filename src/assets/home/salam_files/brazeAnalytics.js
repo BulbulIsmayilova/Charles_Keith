@@ -1,0 +1,1 @@
+(()=>{var e={p:""};e.p=window.urls.jsPublicPath,$(document).ready((()=>{const{braze:e}=window,{apiKey:s,endpoint:i,isBrazeWebPushEnabled:a}=window.preferences.brazeData;e.initialize(s,{baseUrl:i}),e.automaticallyShowInAppMessages(),e.openSession(),a&&!e.isPushPermissionGranted()&&e.isPushSupported()&&e.requestPushPermission()}))})();
