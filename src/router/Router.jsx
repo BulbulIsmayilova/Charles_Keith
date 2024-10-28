@@ -1,4 +1,4 @@
-import { createBrowserRouter, createRoutesFromElements, Route } from "react-router-dom";
+import { createBrowserRouter, createRoutesFromElements, Navigate, Route } from "react-router-dom";
 import HomeLayout from "../layout/HomeLayout";
 import Home from "../pages/Home";
 import Product from "../pages/Product";
@@ -15,6 +15,7 @@ import Wishlist from "../pages/Wishlist";
 export const router = createBrowserRouter(
     createRoutesFromElements(
         <>
+            <Route path="/" element={<Navigate to={'/us'} />} />
             <Route path="/us" element={<HomeLayout/>}>
                 <Route path="/us" index element={<Home />} />
                 <Route path="/us/products/:id" element={<Product/>} />
